@@ -6,9 +6,9 @@ const handler = async (m, {isOwner, isAdmin, conn, text, participants, args, com
   }
   const pesan = args.join` `;
   const oi = `*𝙼𝙴𝙽𝚂𝙰𝙹𝙴:* ${pesan}`;
-  let teks = `*⺀💖𝗦𝗛𝗨𝗣𝗘𝗥 𝗡𝗔𝗡𝗜 𝗕𝗢𝗧 𝗧𝗘 𝗜𝗡𝗩𝗢𝗖𝗔💖⺀*\n\n❏ ${oi}\n\n❏ *𝙴𝚃𝙸𝚀𝚄𝙴𝚃𝙰𝚂:*\n`;
+  let teks = `*⺀🎃𝗙𝗘𝗟𝗜𝗭 𝗛𝗔𝗟𝗟𝗢𝗪𝗘𝗘𝗡🎃⺀*\n\n❏ ${oi}\n\n❏ *𝙴𝚃𝙸𝚀𝚄𝙴𝚃𝙰𝚂:*\n`;
   for (const mem of participants) {
-    teks += `┣➥🎃 @${mem.id.split('@')[0]}\n`;
+    teks += `┣➥👻🦇🕸️🪦@${mem.id.split('@')[0]}\n`;
   }
   teks += `*└*🔥𝘽𝙮 𝙋𝘼𝘾𝙃𝙊𝙉 𝘿𝙊𝙈𝙄𝙉𝘼🔥\n\n*▌│█║▌║▌║║▌║▌║▌║█*`;
   conn.sendMessage(m.chat, {text: teks, mentions: participants.map((a) => a.id)} );
